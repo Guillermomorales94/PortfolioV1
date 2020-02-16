@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  font: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: rgb(133, 121, 121);
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav {
+  background: grey;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: inline-flex;
+  color: white;
+  cursor: pointer;
+}
+
+a.active,a:hover{
+  background: #f4f6f7;
+  transition: .5;
+}
+
+
+
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+
+
+
+header {
+  padding: 12% 0;
+  
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+  
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+
+@media screen and (max-width: 700px) and
+(max-width: 480px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav li a {
+    font-size: 16px;
+    display: none;
+  }
+  body 
+  {
+    text-align: center;
+  }
+
+  ul 
+  {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+
+  
+  }
+
+@media screen and (min-width: 500x) 
+{
+  #nav-dropdown
+  {
+    display: none;
+  }
+
+  .hamburger 
+  {
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 900px) 
+{
+  #nav-dropdown 
+  {
+    display: flex;
+  }
+
+  .hamburger 
+  {
+    display: none;
+  }
+
+}
