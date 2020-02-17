@@ -82,6 +82,12 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+.image 
+{
+  max-width: 100%;
+}
+
+
 
 @media screen and (max-width: 700px) and
 (max-width: 480px) {
