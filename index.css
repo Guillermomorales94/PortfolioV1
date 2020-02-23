@@ -6,28 +6,31 @@
   list-style: none;
 }
 
+.main {
+  background-image: url('images/greypaper2.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
 body {
-  font: 'Courier New', Courier, monospace;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  color: rgb(133, 121, 121);
   text-align: center;
   line-height: 1.5;
+  color: rgb(240, 247, 247);
 }
 
 nav {
-  background: grey;
+  background-image: url('images/blackmatte.JPG');
   height: 80px;
   width: 100%;
 }
 
 label.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+  color: rgb(26, 211, 211) 
 }
+
 
 nav ul {
   float: right;
@@ -41,27 +44,31 @@ nav ul li {
 }
 
 nav ul li a{
-  color: white;
+  color: rgb(239, 248, 248);
   font-size: 17px;
   text-transform: uppercase;
+  display: none;
 }
 
 .hamburger {
-  display: inline-flex;
+  position: relative;
   color: white;
   cursor: pointer;
 }
 
+.hamburger:hover{
+  background: rgb(56, 182, 161) ;
+}
+
 a.active,a:hover{
-  background: #f4f6f7;
+  background: rgb(56, 182, 161);
   transition: .5;
 }
 
 
-
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-image: url('images/blackmatte.JPG');
 }
 
 
@@ -74,34 +81,58 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
-  text-alight: center;
+  background-image: url('images/greypaper2.png');
+  text-align: center;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-image: url('images/blackmatte.JPG');
 }
 
-.image 
+h1 
 {
-  max-width: 100%;
+  font-size: large;
+  font: 'Times New Roman', Times, serif;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+h2 {
+  font-size: medium;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
 }
 
 
+
+
+li {
+  font-size: small;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+section {
+  font-size: small;
+  margin: auto;
+  width: auto;
+  text-align: center;
+}
 
 @media screen and (max-width: 700px) and
 (max-width: 480px) {
-  label.logo{
+  label.logo
+  {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav li a {
+  nav li a 
+  {
     font-size: 16px;
     display: none;
-  }
-  body 
-  {
-    text-align: center;
   }
 
   ul 
@@ -114,8 +145,12 @@ section:nth-child(even) {
     text-align: center;
   }
 
-  
+  #nav-dropdown
+  {
+    display:none;
   }
+}
+
 
 @media screen and (min-width: 500x) 
 {
@@ -126,15 +161,24 @@ section:nth-child(even) {
 
   .hamburger 
   {
+    display: flex;
+  }
+
+  nav ul li a
+  {
     display: none;
   }
-}
 
+  .hamburger {
+    display: inline;
+  }
+
+}
 
 
 @media screen and (min-width: 900px) 
 {
-  #nav-dropdown 
+  nav ul li a 
   {
     display: flex;
   }
@@ -143,5 +187,7 @@ section:nth-child(even) {
   {
     display: none;
   }
+
+ 
 
 }
