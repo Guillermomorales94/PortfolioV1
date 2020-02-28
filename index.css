@@ -7,7 +7,7 @@
 }
 
 .main {
-  background-image: url('PortfolioV1/Images/greypaper2.png');
+  background-image: url('Images/greypaper2.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  background-image: url('PortfolioV1/Images/blackmatte.JPG');
+  background-image: url('Images/blackmatte.JPG');
   height: 80px;
   width: 100%;
 }
@@ -72,7 +72,7 @@ a.active,a:hover{
 
 footer {
   padding: 1% 0;
-  background-image: url('PortfolioV1/Images/blackmatte.JPG');
+  background-image: url('Images/blackmatte.JPG');
 }
 
 
@@ -85,13 +85,13 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-image: url('PortfolioV1/Images/greypaper2.png');
+  background-image: url('Images/greypaper2.png');
   text-align: center;
   flex: 1;
 }
 
 section:nth-child(even) {
-  background-image: url('PortfolioV1/Images/blackmatte.JPG');
+  background-image: url('Images/blackmatte.JPG');
 }
 
 h1 
